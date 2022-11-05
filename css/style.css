@@ -1,1 +1,157 @@
-/*# sourceMappingURL=style.css.map */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  width: min(1450px, 100% - 1rem);
+  margin-inline: auto;
+}
+
+/* SHADOW*/
+.shadow {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* SHADOW*/
+.header {
+  -webkit-padding-before: 80px;
+          padding-block-start: 80px;
+}
+.header .header__nav .header__list {
+  display: flex;
+  justify-content: end;
+  gap: 58px;
+}
+.header .header__nav .header__list .header__link {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1.94px;
+  color: #FFFFFF;
+}
+
+.idia {
+  background-image: url(../images/idea/bg__idia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-margin-before: -110px;
+          margin-block-start: -110px;
+}
+.idia .idia__box {
+  -webkit-padding-before: 400px;
+          padding-block-start: 400px;
+  -webkit-padding-after: 300px;
+          padding-block-end: 300px;
+}
+.idia .idia__box .idia__titel {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  letter-spacing: 4.608px;
+  color: #FFFFFF;
+  -webkit-padding-after: 24px;
+          padding-block-end: 24px;
+  text-align: center;
+}
+.idia .idia__box .idia__text {
+  font-family: "OpenSans";
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 1.28px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}/*# sourceMappingURL=style.css.map */

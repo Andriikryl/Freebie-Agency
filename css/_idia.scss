@@ -1,0 +1,31 @@
+.idia{
+    background-image: url(../images/idea/bg__idia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-block-start: -110px;
+    .idia__box{
+        padding-block-start: 400px;
+        padding-block-end: 300px;
+        .idia__titel{
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 72px;
+            line-height: 107px;
+            letter-spacing: 4.608px;
+            color: #FFFFFF;
+            padding-block-end: 24px;
+            text-align: center;
+        }
+        .idia__text{
+            font-family: 'OpenSans';
+            font-size: 20px;
+            line-height: 23px;          
+            text-align: center;         
+            letter-spacing: 1.28px          ;
+            color: #FFFFFF          ;
+            opacity: 0.8;
+        }
+    }
+}

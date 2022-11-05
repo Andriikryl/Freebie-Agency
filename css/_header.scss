@@ -1,0 +1,19 @@
+.header{
+    padding-block-start: 80px;
+    .header__nav{
+        .header__list{
+            display: flex;
+            justify-content: end;
+            gap: 58px;
+            .header__link{
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 1.94px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
