@@ -1,0 +1,78 @@
+.squd{
+    padding-block: 130px 115px;
+    .squd__box{
+        display: flex;
+        justify-content: center;
+        .squd__text{
+            position: relative;
+            right: -60px;
+            bottom: -100px;
+            z-index: 11;
+            h2{
+                font-family: 'OpenSans';
+                font-size: 42px;
+                line-height: 49px;
+                letter-spacing: 2.688px;
+                color: #504E4E;
+                padding-block-end: 32px;
+                span{
+                    font-family: 'Oswald';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 53px;
+                    letter-spacing: 2.304px;
+                    color: #333333;
+                }
+            }
+            p{
+                max-inline-size: 281px;
+                font-family: 'OpenSans';
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: 1.26px;
+                color: #5B5858;                
+            }
+        }
+        .squde__block{
+            inline-size: 309px ;
+            block-size:  418px;
+            background: #4CAF50;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            position: relative;
+            left: -100px;
+            top: 100px;
+            z-index: 9;
+        }
+        .squd__img-box-one{
+            max-inline-size: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            position: relative;
+            z-index: 10;
+        }
+        .squd__img-box-two{
+            max-inline-size: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            position: relative;
+            top: 200px;
+            left: -200px;
+            z-index: 7;
+        }
+        .squd__text-two{
+            max-inline-size: 281px;
+            font-family: 'OpenSans';
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 1.26px;
+            color: #5B5858;   
+            position: relative;
+            top: 400px;
+            left: -220px;
+            z-index: 8;
+        }
+
+    }
+}
