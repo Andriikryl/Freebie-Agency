@@ -307,4 +307,127 @@ select {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.work {
+  padding-block: 140px;
+}
+.work .work__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.work .work__box .box-left {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+.work .work__box .box-right {
+  flex-basis: 500px;
+  flex-grow: 1;
+}
+
+.work__titel {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 3.072px;
+  color: #252525;
+  -webkit-padding-after: 60px;
+          padding-block-end: 60px;
+}
+
+.work__nav {
+  display: flex;
+  gap: 40px;
+  -webkit-padding-after: 140px;
+          padding-block-end: 140px;
+}
+.work__nav .work__item {
+  font-family: "OpenSans";
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.832px;
+  color: #252525;
+  opacity: 0.3;
+}
+
+.work__card {
+  max-inline-size: 455px;
+  position: relative;
+}
+.work__card .card__img {
+  aspect-ratio: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+}
+.work__card .card__img img {
+  inline-size: 100%;
+  block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.work__card .img__name {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 3.072px;
+  color: #252525;
+  position: absolute;
+  -webkit-text-decoration: line-through 3px hsl(122deg, 38%, 59%);
+          text-decoration: line-through 3px hsl(122deg, 38%, 59%);
+}
+.work__card .card__titel {
+  font-family: "OpenSans";
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 1.152px;
+  color: #252525;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+}
+.work__card .card__text {
+  font-family: "OpenSans";
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.832px;
+  color: #C2C2C2;
+  -webkit-padding-start: 37%;
+          padding-inline-start: 37%;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+}
+.work__card .card__btn {
+  font-family: "OpenSans";
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.832px;
+  color: #252525;
+  -webkit-text-decoration: line-through 3px hsl(122deg, 38%, 59%);
+          text-decoration: line-through 3px hsl(122deg, 38%, 59%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  -webkit-padding-start: 37%;
+          padding-inline-start: 37%;
+}
+
+.img__name:where(.left) {
+  top: 220px;
+  right: -170px;
+}
+
+.img__name:where(.right) {
+  top: 220px;
+  left: -170px;
 }/*# sourceMappingURL=style.css.map */
