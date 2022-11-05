@@ -138,7 +138,7 @@ select {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  font-size: 72px;
+  font-size: clamp(30px, 7vw - 1rem, 72px);
   line-height: 107px;
   letter-spacing: 4.608px;
   color: #FFFFFF;
@@ -235,4 +235,76 @@ select {
   top: 400px;
   left: -220px;
   z-index: 8;
+}
+
+.services {
+  padding-block: 129px 136px;
+  background-color: hsl(0deg, 0%, 98%);
+}
+.services .services__titel-main {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 3.072px;
+  color: #252525;
+  -webkit-padding-after: 94px;
+          padding-block-end: 94px;
+}
+.services .services__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
+  gap: 28px;
+}
+.services .services__box .services__card {
+  padding: 50px 50px 32px 44px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.services .services__box .services__card .services__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-padding-after: 16px;
+          padding-block-end: 16px;
+}
+.services .services__box .services__card .services__info .services__titel {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  color: #252525;
+}
+.services .services__box .services__card .services__info .services__img {
+  padding: 13px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px #DBDBDB;
+  border-radius: 50%;
+}
+.services .services__box .services__card .services__text {
+  font-family: "OpenSans";
+  font-size: 12px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.008px;
+  color: #777777;
+  -webkit-padding-after: 19px;
+          padding-block-end: 19px;
+}
+.services .services__box .services__card .services__btn {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  color: #252525;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+.services{
+    padding-block: 129px 136px;
+    background-color: hsla(0, 0%, 98%, 1);
+    .services__titel-main{
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: 3.072px;
+        color: #252525;        
+        padding-block-end: 94px;
+    }
+    .services__box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
+        gap: 28px;
+        .services__card{
+            padding: 50px 50px 32px 44px;
+            background-color: hsla(0, 0%, 100%, 1);
+            .services__info{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-block-end: 16px;    
+                .services__titel{
+                    font-family: 'Oswald';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 1.28px;
+                    text-transform: uppercase;
+                    color: #252525;                
+                }
+                .services__img{
+                    padding: 13px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 20px #DBDBDB;
+                    border-radius: 50%;
+                }
+            }
+            .services__text{
+                font-family: 'OpenSans';
+                font-size: 12px;
+                line-height: 25px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 1.008px;
+                color: #777777;
+                padding-block-end: 19px;
+                
+            }
+            .services__btn{
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 10px;
+                line-height: 15px;
+                letter-spacing: 0.64px;
+                text-transform: uppercase;
+                color: #252525;          
+                background-color: transparent;
+                border: none;
+                cursor: pointer;      
+            }
+        }
+    }
+}
