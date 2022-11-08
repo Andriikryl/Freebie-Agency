@@ -1,6 +1,26 @@
 .header{
-    padding-block-start: 80px;
+    align-items: center;
+    background: white;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* set the height for the header at its max height you want */
+    left: 0;
+    position: sticky;
+    /** set the value of `top` with the difference between
+    * the height of the outer and inner container to compensate
+    * for this */
+    top: -10px;
+    width: 100%;
+    z-index: 100;
+    padding-block: 40px 40px;
     .header__nav{
+        /** specify the height of the header that you want when scrolling 
+        *The difference between this height and the height of the outer header
+        *is the value of the `top` of the outer container */
+        position: sticky;
+        top: 0;
+        right: 0;
+        width: 100%;
         .header__list{
             display: flex;
             justify-content: end;
@@ -12,7 +32,8 @@
                 font-size: 14px;
                 line-height: 21px;
                 letter-spacing: 1.94px;
-                color: #FFFFFF;
+                // color: #FFFFFF;
+                color: black;
             }
         }
     }

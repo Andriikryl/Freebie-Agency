@@ -85,7 +85,7 @@ select {
   }
 }
 .container {
-  width: min(1450px, 100% - 1rem);
+  width: min(1150px, 100% - 1rem);
   margin-inline: auto;
 }
 
@@ -102,8 +102,31 @@ select {
 
 /* SHADOW*/
 .header {
-  -webkit-padding-before: 80px;
-          padding-block-start: 80px;
+  align-items: center;
+  background: white;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  /* set the height for the header at its max height you want */
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  /** set the value of `top` with the difference between
+  * the height of the outer and inner container to compensate
+  * for this */
+  top: -10px;
+  width: 100%;
+  z-index: 100;
+  padding-block: 40px 40px;
+}
+.header .header__nav {
+  /** specify the height of the header that you want when scrolling 
+  *The difference between this height and the height of the outer header
+  *is the value of the `top` of the outer container */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
 .header .header__nav .header__list {
   display: flex;
@@ -117,7 +140,7 @@ select {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 1.94px;
-  color: #FFFFFF;
+  color: black;
 }
 
 .idia {
@@ -125,8 +148,6 @@ select {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-margin-before: -110px;
-          margin-block-start: -110px;
 }
 .idia .idia__box {
   -webkit-padding-before: 400px;
@@ -357,6 +378,8 @@ select {
 .work__card {
   max-inline-size: 455px;
   position: relative;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
 }
 .work__card .card__img {
   aspect-ratio: 1;
@@ -430,4 +453,66 @@ select {
 .img__name:where(.right) {
   top: 220px;
   left: -170px;
+}
+
+.team {
+  -webkit-padding-after: 160px;
+          padding-block-end: 160px;
+}
+.team .team__titel {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 3.072px;
+  color: #252525;
+  -webkit-padding-after: 74px;
+          padding-block-end: 74px;
+}
+.team .team__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+.team .team__box .team__card {
+  max-width: 379px;
+  position: relative;
+}
+.team .team__box .team__card::after {
+  content: "";
+  display: block;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+.team .team__box .team__card .team__img {
+  aspect-ratio: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .team__box .team__card .team__img img {
+  inline-size: 100%;
+  block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .team__box .team__card .team__info {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1.152px;
+  color: #252525;
+  position: relative;
+  top: -50px;
+  left: 120px;
+  z-index: 20;
 }/*# sourceMappingURL=style.css.map */
